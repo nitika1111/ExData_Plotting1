@@ -1,3 +1,7 @@
+#downloading the file
+download.file("https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip",destfile ="datfile.zip")
+unzip("datfile.zip",exdir=".")
+
 #Load dataset
 mydata<- read.table("household_power_consumption.txt",sep = ";",header = TRUE, na.strings = "?" )
 # Filter Feb 1 and 2 ,2017 data
